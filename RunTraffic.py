@@ -76,6 +76,12 @@ while True:
         GPIO.output(20, False)
         GPIO.output(16, True)
 
+    # Amber
+    if uat_state == 'YELLOW':
+            GPIO.output(20, False)
+            GPIO.output(16, False)
+            GPIO.output(21, True)
+
 
 
     time.sleep(5)
